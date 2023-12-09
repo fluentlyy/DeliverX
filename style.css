@@ -511,7 +511,7 @@ button:hover {
   background-color: #ff5634;
 }
 .frame-8__bottom {
-  max-width: 1222px;
+  max-width: 1500px;
   height: 564px;
   display: flex;
   align-items: center;
@@ -530,7 +530,7 @@ button:hover {
   flex-direction: column;
   align-items: center;
   padding: 40.77px 33px 42px 33px;
-  margin: 48px 0 0 0;
+  margin: 48px 28px 0 0;
 }
 .card__title {
   width: 322.656px;
@@ -577,21 +577,21 @@ button:hover {
   margin: 0 auto;
   width: 100%;
   height: 70%;
-  border: 1px solid #000;
   overflow: hidden;
 }
 .carousel-item {
+}
+.item__box {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
-.carousel-inner {
-}
 .carousel-control-next,
 .carousel-control-prev {
-  width: 10%;
+  width: 5%;
+  opacity: 0.7;
 }
 .carousel button {
   height: auto;
