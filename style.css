@@ -138,7 +138,6 @@ button:hover {
 .main {
 }
 .frame-1 {
-  height: 912px;
   width: 100%;
   position: relative;
 }
@@ -375,9 +374,10 @@ button:hover {
   font-weight: 400;
   line-height: 19.998px; /* 111.1% */
   margin: 0;
+  --bs-btn-active-border-color: #ff5634;
 }
 .frame-8 {
-  margin: 200px 0;
+  margin: 200px 0 100px 0;
 }
 .frame-8__top {
   max-width: 1222px;
@@ -576,7 +576,7 @@ button:hover {
 .carousel {
   margin: 0 auto;
   width: 100%;
-  height: 70%;
+  height: 60%;
   overflow: hidden;
 }
 .carousel-item {
@@ -595,4 +595,176 @@ button:hover {
 }
 .carousel button {
   height: auto;
+}
+.frame-9 {
+  background: #121212;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 680px;
+}
+.frame-9__box {
+  width: 582px;
+  height: 315px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 250px;
+}
+.frame-9__box h2 {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 66.024px; /* 117.9% */
+}
+.frame-9 p {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30.006px; /* 250.05% */
+  margin: 20px 0 33px 0;
+}
+.frame-9__box .btn-secondary {
+  width: 247px;
+  height: 72px;
+  border-radius: 16px;
+  border: 1px solid #ff5634;
+  background: #ff5634;
+  color: #fff;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 19.998px; /* 111.1% */
+  margin: 0;
+  --bs-btn-active-border-color: #ff5634;
+}
+.frame-9__phones {
+  width: 672.297px;
+  height: 613px;
+  position: relative;
+  transform: translateY(-110px);
+}
+.phone-left,
+.phone-right {
+  position: absolute;
+}
+@keyframes left {
+  0% {
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+  100% {
+  }
+}
+@keyframes right {
+  0% {
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+  }
+}
+.phone-left {
+  right: 400px;
+  z-index: 1;
+  animation: left 3s infinite;
+}
+.phone-right {
+  left: -20px;
+  animation: right 3s infinite;
+}
+@media (max-width: 1335px) {
+  .container-fluid {
+    flex-direction: column;
+  }
+  .frame-1__phone {
+    display: none;
+  }
+  .frame-1__background {
+    display: none;
+  }
+  .frame-1__info {
+    margin: 0 auto;
+    align-items: center;
+  }
+  .info__txt {
+    text-align: center;
+  }
+  .info__title-2 {
+    text-align: center;
+  }
+  .line-2 {
+    display: none;
+  }
+  .frame-5 {
+    display: none;
+    height: 500px;
+  }
+  .frame-5 img {
+    display: none;
+  }
+  .frame-5__box {
+    margin: 0 auto;
+  }
+  .frame-8 {
+    margin-top: 100px;
+  }
+  .frame-8__top {
+    flex-direction: column;
+    width: 500px;
+  }
+  .top__info p {
+    text-align: center;
+  }
+  .phone-left,
+  .phone-right {
+    display: none;
+  }
+  .frame-9__box {
+    align-items: center;
+    text-align: center;
+  }
+  .frame-9__box h2 {
+    width: 500px;
+  }
+  .frame-9__phones {
+    display: none;
+  }
+}
+/* Стилі для великих екранів (дисплей максимум 1199рх) */
+@media (max-width: 1199px) {
+}
+
+/* Стилі для середніх екранів (дисплей максимум 991рх) */
+@media (max-width: 991px) {
+  .container-fluid {
+    flex-direction: row;
+  }
+  .navbar-nav {
+    background-color: aquamarine;
+    width: 991px;
+  }
+  .frame2M {
+    display: none;
+  }
+  .line-2 {
+    display: none;
+  }
+}
+
+/* Стилі для малих екранів (дисплей максимум 767рх) */
+@media (max-width: 767px) {
+}
+
+/* Стилі для дуже малих екранів (дисплей максимум 575рх) */
+@media (max-width: 575px) {
 }
