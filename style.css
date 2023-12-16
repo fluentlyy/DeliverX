@@ -140,10 +140,12 @@ button:hover {
 .frame-1 {
   width: 100%;
   position: relative;
+  padding: 110px 0;
 }
 .frame-1__background {
   position: absolute;
   right: 0;
+  top: 0;
 }
 .frame-1__container {
   max-width: 1222px;
@@ -339,7 +341,7 @@ button:hover {
   align-items: flex-start;
   justify-content: space-between;
   flex-direction: column;
-  margin-left: 300px;
+  margin: 0 auto;
 }
 .box__title {
   color: #fff;
@@ -682,6 +684,33 @@ button:hover {
   left: -20px;
   animation: right 3s infinite;
 }
+.accordion-button::after {
+  display: none;
+}
+.accordion-button svg {
+  width: 50px;
+}
+.accordion-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  background-color: #121212;
+}
+.accordion-button:not(.collapsed) {
+  color: none;
+  background-color: #121212;
+  box-shadow: none;
+}
+.accordion-button:focus {
+  z-index: none;
+  border-color: none;
+  outline: 0;
+  box-shadow: none;
+}
+.accordion-body {
+  padding: 0;
+}
 @media (max-width: 1335px) {
   .container-fluid {
     flex-direction: column;
@@ -690,27 +719,22 @@ button:hover {
     display: none;
   }
   .frame-1__background {
-    display: none;
   }
   .frame-1__info {
-    margin: 0 auto;
-    align-items: center;
   }
   .info__txt {
-    text-align: center;
   }
   .info__title-2 {
-    text-align: center;
   }
   .line-2 {
     display: none;
   }
   .frame-5 {
-    display: none;
     height: 500px;
+    overflow: hidden;
   }
   .frame-5 img {
-    display: none;
+    width: 550px;
   }
   .frame-5__box {
     margin: 0 auto;
@@ -738,6 +762,11 @@ button:hover {
   }
   .frame-9__phones {
     display: none;
+  }
+}
+@media (max-width: 1250px) {
+  .frame-1__background {
+    height: 800px;
   }
 }
 /* Стилі для великих екранів (дисплей максимум 1199рх) */
